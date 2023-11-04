@@ -1,0 +1,72 @@
+body {
+    /* margin - margen del elemento */
+    margin: 0;
+    /* padding - "margen" hacia adentro */
+    padding: 0;
+    /* Fuentes del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* *********************************************** */
+/* ************************************** */
+/* ***************************** */
+/* NAVEGACIÓN */
+
+header {
+    /* width - ancho /// height-alto */
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    /* Justificar a la derecha */
+    /* Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a {
+    /* Eliminar línea debajo de texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+/*icono del menu */
+nav .nav-right-section.menu{
+    /*AGREGAE ICONOS */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png) ;
+    /*QUE LA IMAGEN ESTE CONTENIDA EN EL ELEMENTO MAS GRANDE*/
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+ /*imagen del usuario*/
+ nav .nav-right-section img{
+    /*redondeamos bordes*/
+    border-radius: 100%;
+    /*cambiar tamaño de la imagen*/
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+ }
+ /****************/
+ main{
+    background-color: aqua;
+    margin-top: 30px;
+ }
